@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
-  <body id="body" class=".w3-container">
+  <body id="body" class=".w3-container w3-padding-16 w3-cursive">
     <header id="header" class="w3-container">
       <h1>ACTIVITY SEEKER</h1>
-      <button w3-btn onclick="toggleDarkMode()" >DARK/LIGHT MODE</button>
+      <button w3-btn onclick="toggleDarkMode()">DARK/LIGHT MODE</button>
     </header>
-    <section class="w3-half">
-      <div id="randomActivity" class="w3-half">
+    <section class="w3-container w3-padding-large w3-margin">
+      <div id="randomActivity" class="w3-half w3-card-4 w3-border ">
         <h3>Generate a random activity</h3>
         <button id="GenerateButton">Generate</button>
-        <div id="generatedResponse-results">
-
-        </div>
+        <div id="generatedResponse-results"></div>
       </div>
-      <div id="leftActivites" class="w3-half">
+      <div
+        id="leftActivites"
+        class="w3-half  w3-card-4 w3-padding-large w3-border"
+      >
         <div id="afterSearch-results">
-            <p>search results</p>
+          <p>search results</p>
         </div>
       </div>
     </section>
