@@ -14,7 +14,7 @@
   <body id="body" class=".w3-container w3-padding-16 w3-cursive">
     <header id="header" class="w3-container w3-center">
       <h1 class="w3-panel w3-border-bottom ">ACTIVITY SEEKER</h1>
-      <button class="w3-button w3-border w3-round-large " id="body" onclick="toggleDarkMode()">DARK/LIGHT MODE</button>
+      <button class="w3-button w3-border w3-round " id="body" onclick="toggleDarkMode()">DARK/LIGHT MODE</button>
     </header>
     <section class="w3-container w3-padding-large w3-margin">
       <div id="randomActivity" class="w3-half w3-card-4 w3-border">
@@ -27,7 +27,7 @@
         class="w3-half w3-card-4 w3-padding-large w3-border"
       >
         <div id="afterSearch-results">
-          <div id="searchResults" >
+          <div id="search" >
             <form id="activityFilter" class="w3-container">
               <label for="participants">Participants:</label>
               <select id="participants" name="participants" class="w3-round-large">
@@ -46,6 +46,11 @@
                 <option value="recreational">recreational</option>
                 <option value="social">social</option>
                 <option value="music">music</option>
+                <option value="diy">diy</option>
+                <option value="charity">charity</option>
+                <option value="cooking">cooking</option>
+                <option value="relaxation">relaxation</option>
+                <option value="busywork">busywork</option>
                 </select>
             
               <button id="submit" type="submit" class="w3-round-large">Find Activity</button>

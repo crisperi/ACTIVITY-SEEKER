@@ -13,13 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     const form = document.querySelector("#activityFilter");
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
         //prevent default behaviour 
         e.preventDefault();
 
         const participants = document.querySelector("#participants").value;
         const typeValue = document.querySelector("#type").value;
-        console.log(participants , typeValue)
+        console.log(participants, typeValue)
+        const dataPromise = fetchData(`https://www.boredapi.com/api/activity?type=${typeValue}&participants=${participants}`)
+        dataPromise.then((data) => {
+            console.log(data)
+        })
     })
 });
 
@@ -34,7 +38,7 @@ function fetchData(url) {
     return fetch(url)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data);
+            
             return data;
         });
 }
