@@ -1,8 +1,14 @@
 # ACTIVITY-SEEKER
 
+![SNEEK-PEAK](./ACTIVITY-SEEKER.PNG)
+
+
 A brief description of what the project does -
 This project suggest activities to the user to do . I t also has a filter functionality if you want to be specific with the number of participants . 
 The project uses BORED API to suggest activites to the user by using fetch to communicate with the api
+
+
+
 ## Table of Contents
 
 - [Installation](#installation)
