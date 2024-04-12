@@ -25,4 +25,4 @@ Guidelines for contributing to the project, including how to report bugs and sug
 ## License
 
 Information about the project's license, and any additional terms and conditions.
-
+Refer to license document . GPL-3.0 LICENSE 
