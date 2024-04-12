@@ -11,8 +11,16 @@ function toggleDarkMode() {
 
 
 
-fetch("https://www.boredapi.com/api/activity")
-    .then(resp => resp.json())
-    .then(data => {
-        console.log(data)
-    })
+
+
+function fetchData(url) {
+    return fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+}
+fetchData("https://www.boredapi.com/api/activity")
+.then(()=>{
+    
+})
