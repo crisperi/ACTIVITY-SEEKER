@@ -13,11 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     const form = document.querySelector("#activityFilter");
-    form.addEventListener("submit",(e)=>{
-e.preventDefault();
+    form.addEventListener("submit", (e) => {
+        //prevent default behaviour 
+        e.preventDefault();
 
+        const participants = document.querySelector("#participants").value;
+        const typeValue = document.querySelector("#type").value;
+        console.log(participants , typeValue)
     })
 });
+
+
 //function to give dark mode class toogle
 function toggleDarkMode() {
     const body = document.body;
