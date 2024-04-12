@@ -6,6 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body id="body" class=".w3-container w3-padding-16 w3-cursive">
     <header id="header" class="w3-container w3-center">
@@ -13,16 +17,20 @@
       <button w3-btn onclick="toggleDarkMode()">DARK/LIGHT MODE</button>
     </header>
     <section class="w3-container w3-padding-large w3-margin">
-      <div id="randomActivity" class="w3-half w3-card-4 w3-border ">
+      <div id="randomActivity" class="w3-half w3-card-4 w3-border">
         <h3>Generate a random activity</h3>
         <button id="GenerateButton">Generate</button>
         <div id="generatedResponse-results"></div>
       </div>
       <div
         id="leftActivites"
-        class="w3-half  w3-card-4 w3-padding-large w3-border"
+        class="w3-half w3-card-4 w3-padding-large w3-border"
       >
         <div id="afterSearch-results">
+          <div class="w3-container">
+          <input class="w3-input" type="text" />
+          <button class="fa fa-search w3-spin w3-right"></button>
+          </div>
           <p>search results</p>
         </div>
       </div>
