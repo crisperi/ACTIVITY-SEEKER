@@ -13,13 +13,13 @@
   </head>
   <body id="body" class=".w3-container w3-padding-16 w3-cursive">
     <header id="header" class="w3-container w3-center">
-      <h1>ACTIVITY SEEKER</h1>
-      <button class="w3-button " id="body" onclick="toggleDarkMode()">DARK/LIGHT MODE</button>
+      <h1 class="w3-panel w3-border-bottom ">ACTIVITY SEEKER</h1>
+      <button class="w3-button w3-border w3-round-large " id="body" onclick="toggleDarkMode()">DARK/LIGHT MODE</button>
     </header>
     <section class="w3-container w3-padding-large w3-margin">
       <div id="randomActivity" class="w3-half w3-card-4 w3-border">
         <h3>Generate a random activity</h3>
-        <button class="w3-btn w3-hover-red "  id="generateButton">Generate</button>
+        <button class="w3-btn w3-border w3-round-large "  id="generateButton">Generate</button>
         <div id="generatedResponse-results"></div>
       </div>
       <div
@@ -27,10 +27,10 @@
         class="w3-half w3-card-4 w3-padding-large w3-border"
       >
         <div id="afterSearch-results">
-          <div id="searchResults">
-            <form id="activityFilter">
+          <div id="searchResults" >
+            <form id="activityFilter" class="w3-container">
               <label for="participants">Participants:</label>
-              <select id="participants" name="participants">
+              <select id="participants" name="participants" class="w3-round-large">
                 <option value="">Any</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -40,7 +40,7 @@
               </select>
             
               <label for="type">Activity Type:</label>
-              <select id="type" name="type">
+              <select id="type" name="type" class="w3-round-large">
                 <option value="">Any</option>
                 <option value="education">education</option>
                 <option value="recreational">recreational</option>
@@ -48,7 +48,7 @@
                 <option value="music">music</option>
                 </select>
             
-              <button id="submit" type="submit">Find Activity</button>
+              <button id="submit" type="submit" class="w3-round-large">Find Activity</button>
             </form>
             <p>search results</p>
           </div>
