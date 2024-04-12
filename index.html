@@ -19,7 +19,7 @@
     <section class="w3-container w3-padding-large w3-margin">
       <div id="randomActivity" class="w3-half w3-card-4 w3-border">
         <h3>Generate a random activity</h3>
-        <button class="w3-btn "  id="generateButton">Generate</button>
+        <button class="w3-btn w3-hover-red "  id="generateButton">Generate</button>
         <div id="generatedResponse-results"></div>
       </div>
       <div
@@ -27,11 +27,25 @@
         class="w3-half w3-card-4 w3-padding-large w3-border"
       >
         <div id="afterSearch-results">
-          <div class="w3-container">
-          <input id="search" class="w3-input" type="text" />
-          <button class=" w3-btn fa fa-search w3-spin w3-right"></button>
-          </div>
           <div id="searchResults">
+            <form id="activityFilter">
+              <label for="participants">Participants:</label>
+              <select id="participants" name="participants">
+                <option value="">Any</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            
+              <label for="type">Activity Type:</label>
+              <select id="type" name="type">
+                <option value="">Any</option>
+                </select>
+            
+              <button type="submit">Find Activity</button>
+            </form>
             <p>search results</p>
           </div>
         </div>

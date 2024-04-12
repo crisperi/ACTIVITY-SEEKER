@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         dataPromise.then(data => {
         const activityElement = document.createElement("p");
         const generatedResults = document.querySelector("#generatedResponse-results")
-        activityElement.textContent = `Activity: ${data.activity}`;
+        activityElement.textContent = `Activity: ${data.activity} Participants  :${data.participants}`;
         generatedResults.appendChild(activityElement);
         }
       )
