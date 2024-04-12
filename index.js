@@ -1,26 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-
+    const generate = document.querySelector("#generateButton");
+    generate.addEventListener("click", async () => {
+        const dataPromise = fetchData("https://www.boredapi.com/api/activity/");
+        dataPromise.then(data => {
+        const activityElement = document.createElement("p");
+        const generatedResults = document.querySelector("#generatedResponse-results")
+        activityElement.textContent = `Activity: ${data.activity}`;
+        generatedResults.appendChild(activityElement);
+        }
+      )
 })
-
-//function to give dark mode class toogle 
+});
+//function to give dark mode class toogle
 function toggleDarkMode() {
     const body = document.body;
     body.classList.toggle("dark-mode");
 }
 
-
-
-
-
 function fetchData(url) {
     return fetch(url)
-        .then(response => response.json())
-        .then(data => {
+        .then((response) => response.json())
+        .then((data) => {
             console.log(data);
-        })
+            return data ;
+        });
 }
-fetchData("https://www.boredapi.com/api/activity")
-.then(()=>{
-    
-})
