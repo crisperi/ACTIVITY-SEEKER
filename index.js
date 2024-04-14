@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         dataPromise.then(data => {
             const activityElement = document.createElement("p");
             const generatedResults = document.querySelector("#generatedResponse-results")
-            activityElement.textContent = `Activity: ${data.activity} Participants  :${data.participants}`;
+            activityElement.textContent = `Activity: ${data.activity}, TYPE:${data.type} Participants  :${data.participants}, LINK :${data.link}`;
             generatedResults.appendChild(activityElement);
         }
         )
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 results.appendChild(resultsContainer);
             } else {
                
-                resultsContainer.textContent = `Activity :${data.activity} for ${participants} participants `;
+                resultsContainer.textContent = `Activity :${data.activity} for ${participants} participants, LINK : ${data.link}`;
                 results.appendChild(resultsContainer);
             }
 
@@ -50,7 +50,7 @@ function fetchData(url) {
     return fetch(url)
         .then((response) => response.json())
         .then((data) => {
-
+            console.log(data)
             return data;
         });
 }
